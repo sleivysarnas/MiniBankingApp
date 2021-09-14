@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		323544F126F1229A0089E171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323544F026F1229A0089E171 /* AppDelegate.swift */; };
+		323544F326F1229A0089E171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323544F226F1229A0089E171 /* SceneDelegate.swift */; };
+		323544F826F1229A0089E171 /* MiniBankingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 323544F626F1229A0089E171 /* MiniBankingApp.xcdatamodeld */; };
+		323544FA26F1229B0089E171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323544F926F1229B0089E171 /* Assets.xcassets */; };
+		3235450B26F1229B0089E171 /* MiniBankingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3235450A26F1229B0089E171 /* MiniBankingAppTests.swift */; };
+		3235451626F1229B0089E171 /* MiniBankingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3235451526F1229B0089E171 /* MiniBankingAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3235450726F1229B0089E171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323544E526F1229A0089E171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323544EC26F1229A0089E171;
+			remoteInfo = MiniBankingApp;
+		};
+		3235451226F1229B0089E171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323544E526F1229A0089E171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323544EC26F1229A0089E171;
+			remoteInfo = MiniBankingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		323544ED26F1229A0089E171 /* MiniBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323544F026F1229A0089E171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		323544F226F1229A0089E171 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		323544F726F1229A0089E171 /* MiniBankingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniBankingApp.xcdatamodel; sourceTree = "<group>"; };
+		323544F926F1229B0089E171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3235450126F1229B0089E171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3235450626F1229B0089E171 /* MiniBankingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniBankingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3235450A26F1229B0089E171 /* MiniBankingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBankingAppTests.swift; sourceTree = "<group>"; };
+		3235450C26F1229B0089E171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3235451126F1229B0089E171 /* MiniBankingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniBankingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3235451526F1229B0089E171 /* MiniBankingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBankingAppUITests.swift; sourceTree = "<group>"; };
+		3235451726F1229B0089E171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323544EA26F1229A0089E171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3235450326F1229B0089E171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3235450E26F1229B0089E171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		323544E426F1229A0089E171 = {
+			isa = PBXGroup;
+			children = (
+				323544EF26F1229A0089E171 /* MiniBankingApp */,
+				3235450926F1229B0089E171 /* MiniBankingAppTests */,
+				3235451426F1229B0089E171 /* MiniBankingAppUITests */,
+				323544EE26F1229A0089E171 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		323544EE26F1229A0089E171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				323544ED26F1229A0089E171 /* MiniBankingApp.app */,
+				3235450626F1229B0089E171 /* MiniBankingAppTests.xctest */,
+				3235451126F1229B0089E171 /* MiniBankingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323544EF26F1229A0089E171 /* MiniBankingApp */ = {
+			isa = PBXGroup;
+			children = (
+				323544F026F1229A0089E171 /* AppDelegate.swift */,
+				323544F226F1229A0089E171 /* SceneDelegate.swift */,
+				323544F926F1229B0089E171 /* Assets.xcassets */,
+				3235450126F1229B0089E171 /* Info.plist */,
+				323544F626F1229A0089E171 /* MiniBankingApp.xcdatamodeld */,
+			);
+			path = MiniBankingApp;
+			sourceTree = "<group>";
+		};
+		3235450926F1229B0089E171 /* MiniBankingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3235450A26F1229B0089E171 /* MiniBankingAppTests.swift */,
+				3235450C26F1229B0089E171 /* Info.plist */,
+			);
+			path = MiniBankingAppTests;
+			sourceTree = "<group>";
+		};
+		3235451426F1229B0089E171 /* MiniBankingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3235451526F1229B0089E171 /* MiniBankingAppUITests.swift */,
+				3235451726F1229B0089E171 /* Info.plist */,
+			);
+			path = MiniBankingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		323544EC26F1229A0089E171 /* MiniBankingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3235451A26F1229B0089E171 /* Build configuration list for PBXNativeTarget "MiniBankingApp" */;
+			buildPhases = (
+				323544E926F1229A0089E171 /* Sources */,
+				323544EA26F1229A0089E171 /* Frameworks */,
+				323544EB26F1229A0089E171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniBankingApp;
+			productName = MiniBankingApp;
+			productReference = 323544ED26F1229A0089E171 /* MiniBankingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3235450526F1229B0089E171 /* MiniBankingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3235451D26F1229B0089E171 /* Build configuration list for PBXNativeTarget "MiniBankingAppTests" */;
+			buildPhases = (
+				3235450226F1229B0089E171 /* Sources */,
+				3235450326F1229B0089E171 /* Frameworks */,
+				3235450426F1229B0089E171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3235450826F1229B0089E171 /* PBXTargetDependency */,
+			);
+			name = MiniBankingAppTests;
+			productName = MiniBankingAppTests;
+			productReference = 3235450626F1229B0089E171 /* MiniBankingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3235451026F1229B0089E171 /* MiniBankingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3235452026F1229B0089E171 /* Build configuration list for PBXNativeTarget "MiniBankingAppUITests" */;
+			buildPhases = (
+				3235450D26F1229B0089E171 /* Sources */,
+				3235450E26F1229B0089E171 /* Frameworks */,
+				3235450F26F1229B0089E171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3235451326F1229B0089E171 /* PBXTargetDependency */,
+			);
+			name = MiniBankingAppUITests;
+			productName = MiniBankingAppUITests;
+			productReference = 3235451126F1229B0089E171 /* MiniBankingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323544E526F1229A0089E171 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					323544EC26F1229A0089E171 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3235450526F1229B0089E171 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 323544EC26F1229A0089E171;
+					};
+					3235451026F1229B0089E171 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 323544EC26F1229A0089E171;
+					};
+				};
+			};
+			buildConfigurationList = 323544E826F1229A0089E171 /* Build configuration list for PBXProject "MiniBankingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 323544E426F1229A0089E171;
+			productRefGroup = 323544EE26F1229A0089E171 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				323544EC26F1229A0089E171 /* MiniBankingApp */,
+				3235450526F1229B0089E171 /* MiniBankingAppTests */,
+				3235451026F1229B0089E171 /* MiniBankingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323544EB26F1229A0089E171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323544FA26F1229B0089E171 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3235450426F1229B0089E171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3235450F26F1229B0089E171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323544E926F1229A0089E171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323544F126F1229A0089E171 /* AppDelegate.swift in Sources */,
+				323544F326F1229A0089E171 /* SceneDelegate.swift in Sources */,
+				323544F826F1229A0089E171 /* MiniBankingApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3235450226F1229B0089E171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3235450B26F1229B0089E171 /* MiniBankingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3235450D26F1229B0089E171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3235451626F1229B0089E171 /* MiniBankingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3235450826F1229B0089E171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323544EC26F1229A0089E171 /* MiniBankingApp */;
+			targetProxy = 3235450726F1229B0089E171 /* PBXContainerItemProxy */;
+		};
+		3235451326F1229B0089E171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323544EC26F1229A0089E171 /* MiniBankingApp */;
+			targetProxy = 3235451226F1229B0089E171 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3235451826F1229B0089E171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3235451926F1229B0089E171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3235451B26F1229B0089E171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = FA63X2Z829;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniBankingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arnassleivys.MiniBankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3235451C26F1229B0089E171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = FA63X2Z829;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniBankingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arnassleivys.MiniBankingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3235451E26F1229B0089E171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA63X2Z829;
+				INFOPLIST_FILE = MiniBankingAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arnassleivys.MiniBankingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniBankingApp.app/MiniBankingApp";
+			};
+			name = Debug;
+		};
+		3235451F26F1229B0089E171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA63X2Z829;
+				INFOPLIST_FILE = MiniBankingAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arnassleivys.MiniBankingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniBankingApp.app/MiniBankingApp";
+			};
+			name = Release;
+		};
+		3235452126F1229B0089E171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA63X2Z829;
+				INFOPLIST_FILE = MiniBankingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arnassleivys.MiniBankingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniBankingApp;
+			};
+			name = Debug;
+		};
+		3235452226F1229B0089E171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FA63X2Z829;
+				INFOPLIST_FILE = MiniBankingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arnassleivys.MiniBankingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniBankingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323544E826F1229A0089E171 /* Build configuration list for PBXProject "MiniBankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3235451826F1229B0089E171 /* Debug */,
+				3235451926F1229B0089E171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3235451A26F1229B0089E171 /* Build configuration list for PBXNativeTarget "MiniBankingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3235451B26F1229B0089E171 /* Debug */,
+				3235451C26F1229B0089E171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3235451D26F1229B0089E171 /* Build configuration list for PBXNativeTarget "MiniBankingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3235451E26F1229B0089E171 /* Debug */,
+				3235451F26F1229B0089E171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3235452026F1229B0089E171 /* Build configuration list for PBXNativeTarget "MiniBankingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3235452126F1229B0089E171 /* Debug */,
+				3235452226F1229B0089E171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		323544F626F1229A0089E171 /* MiniBankingApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				323544F726F1229A0089E171 /* MiniBankingApp.xcdatamodel */,
+			);
+			currentVersion = 323544F726F1229A0089E171 /* MiniBankingApp.xcdatamodel */;
+			path = MiniBankingApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 323544E526F1229A0089E171 /* Project object */;
+}
