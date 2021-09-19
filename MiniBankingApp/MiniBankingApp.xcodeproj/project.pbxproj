@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320C02E626F74F790003D119 /* PINCodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C02E526F74F790003D119 /* PINCodeInteractor.swift */; };
+		320C02E826F7520E0003D119 /* PINCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C02E726F7520E0003D119 /* PINCodePresenter.swift */; };
+		3234288226F25C770008C5EB /* UIView+Nibbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234288126F25C770008C5EB /* UIView+Nibbed.swift */; };
+		3234288526F266840008C5EB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3234288426F266840008C5EB /* Launch Screen.storyboard */; };
 		323544F126F1229A0089E171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323544F026F1229A0089E171 /* AppDelegate.swift */; };
 		323544F326F1229A0089E171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323544F226F1229A0089E171 /* SceneDelegate.swift */; };
 		323544F826F1229A0089E171 /* MiniBankingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 323544F626F1229A0089E171 /* MiniBankingApp.xcdatamodeld */; };
 		323544FA26F1229B0089E171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323544F926F1229B0089E171 /* Assets.xcassets */; };
 		3235450B26F1229B0089E171 /* MiniBankingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3235450A26F1229B0089E171 /* MiniBankingAppTests.swift */; };
 		3235451626F1229B0089E171 /* MiniBankingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3235451526F1229B0089E171 /* MiniBankingAppUITests.swift */; };
+		325F141F26F12F900018B0B4 /* PINCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325F141E26F12F900018B0B4 /* PINCodeViewController.xib */; };
+		325F142126F1303C0018B0B4 /* PINCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F142026F1303C0018B0B4 /* PINCodeViewController.swift */; };
+		325F142426F130B20018B0B4 /* PINCodeKeyboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325F142326F130B20018B0B4 /* PINCodeKeyboardCell.xib */; };
+		325F142626F1311D0018B0B4 /* PINCodeSymbolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325F142526F1311D0018B0B4 /* PINCodeSymbolCell.xib */; };
+		325F142926F1316E0018B0B4 /* PINCodeKeyboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F142826F1316E0018B0B4 /* PINCodeKeyboardCell.swift */; };
+		325F142B26F131780018B0B4 /* PINCodeSymbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F142A26F131780018B0B4 /* PINCodeSymbolCell.swift */; };
+		325F142E26F131FC0018B0B4 /* UICollectionView+Nibbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325F142D26F131FC0018B0B4 /* UICollectionView+Nibbed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320C02E526F74F790003D119 /* PINCodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeInteractor.swift; sourceTree = "<group>"; };
+		320C02E726F7520E0003D119 /* PINCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodePresenter.swift; sourceTree = "<group>"; };
+		3234288126F25C770008C5EB /* UIView+Nibbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nibbed.swift"; sourceTree = "<group>"; };
+		3234288426F266840008C5EB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		323544ED26F1229A0089E171 /* MiniBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323544F026F1229A0089E171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		323544F226F1229A0089E171 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +60,13 @@
 		3235451126F1229B0089E171 /* MiniBankingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniBankingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3235451526F1229B0089E171 /* MiniBankingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBankingAppUITests.swift; sourceTree = "<group>"; };
 		3235451726F1229B0089E171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325F141E26F12F900018B0B4 /* PINCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINCodeViewController.xib; sourceTree = "<group>"; };
+		325F142026F1303C0018B0B4 /* PINCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeViewController.swift; sourceTree = "<group>"; };
+		325F142326F130B20018B0B4 /* PINCodeKeyboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINCodeKeyboardCell.xib; sourceTree = "<group>"; };
+		325F142526F1311D0018B0B4 /* PINCodeSymbolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PINCodeSymbolCell.xib; sourceTree = "<group>"; };
+		325F142826F1316E0018B0B4 /* PINCodeKeyboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeKeyboardCell.swift; sourceTree = "<group>"; };
+		325F142A26F131780018B0B4 /* PINCodeSymbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINCodeSymbolCell.swift; sourceTree = "<group>"; };
+		325F142D26F131FC0018B0B4 /* UICollectionView+Nibbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Nibbed.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +117,14 @@
 		323544EF26F1229A0089E171 /* MiniBankingApp */ = {
 			isa = PBXGroup;
 			children = (
+				325F142C26F131BF0018B0B4 /* Extensions */,
+				325F141926F12BF50018B0B4 /* Scenes */,
 				323544F026F1229A0089E171 /* AppDelegate.swift */,
 				323544F226F1229A0089E171 /* SceneDelegate.swift */,
 				323544F926F1229B0089E171 /* Assets.xcassets */,
 				3235450126F1229B0089E171 /* Info.plist */,
 				323544F626F1229A0089E171 /* MiniBankingApp.xcdatamodeld */,
+				3234288426F266840008C5EB /* Launch Screen.storyboard */,
 			);
 			path = MiniBankingApp;
 			sourceTree = "<group>";
@@ -120,6 +145,54 @@
 				3235451726F1229B0089E171 /* Info.plist */,
 			);
 			path = MiniBankingAppUITests;
+			sourceTree = "<group>";
+		};
+		325F141926F12BF50018B0B4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				325F141B26F12E120018B0B4 /* PINCode */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		325F141B26F12E120018B0B4 /* PINCode */ = {
+			isa = PBXGroup;
+			children = (
+				325F142726F131590018B0B4 /* Cells */,
+				325F142226F1304E0018B0B4 /* Xibs */,
+				325F142026F1303C0018B0B4 /* PINCodeViewController.swift */,
+				320C02E526F74F790003D119 /* PINCodeInteractor.swift */,
+				320C02E726F7520E0003D119 /* PINCodePresenter.swift */,
+			);
+			path = PINCode;
+			sourceTree = "<group>";
+		};
+		325F142226F1304E0018B0B4 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				325F141E26F12F900018B0B4 /* PINCodeViewController.xib */,
+				325F142326F130B20018B0B4 /* PINCodeKeyboardCell.xib */,
+				325F142526F1311D0018B0B4 /* PINCodeSymbolCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		325F142726F131590018B0B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				325F142826F1316E0018B0B4 /* PINCodeKeyboardCell.swift */,
+				325F142A26F131780018B0B4 /* PINCodeSymbolCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		325F142C26F131BF0018B0B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				325F142D26F131FC0018B0B4 /* UICollectionView+Nibbed.swift */,
+				3234288126F25C770008C5EB /* UIView+Nibbed.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				323544FA26F1229B0089E171 /* Assets.xcassets in Resources */,
+				325F141F26F12F900018B0B4 /* PINCodeViewController.xib in Resources */,
+				325F142626F1311D0018B0B4 /* PINCodeSymbolCell.xib in Resources */,
+				3234288526F266840008C5EB /* Launch Screen.storyboard in Resources */,
+				325F142426F130B20018B0B4 /* PINCodeKeyboardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				323544F126F1229A0089E171 /* AppDelegate.swift in Sources */,
+				325F142926F1316E0018B0B4 /* PINCodeKeyboardCell.swift in Sources */,
+				325F142B26F131780018B0B4 /* PINCodeSymbolCell.swift in Sources */,
+				320C02E826F7520E0003D119 /* PINCodePresenter.swift in Sources */,
+				325F142E26F131FC0018B0B4 /* UICollectionView+Nibbed.swift in Sources */,
+				320C02E626F74F790003D119 /* PINCodeInteractor.swift in Sources */,
 				323544F326F1229A0089E171 /* SceneDelegate.swift in Sources */,
 				323544F826F1229A0089E171 /* MiniBankingApp.xcdatamodeld in Sources */,
+				3234288226F25C770008C5EB /* UIView+Nibbed.swift in Sources */,
+				325F142126F1303C0018B0B4 /* PINCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
