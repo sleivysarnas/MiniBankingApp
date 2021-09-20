@@ -15,10 +15,12 @@ final class PINCodeRouter {
     weak var viewController: PINCodeViewController!
 }
 
+// MARK: - PINCodeRouterInput methods
+
 extension PINCodeRouter: PINCodeRouterInput {
 
     func routeToTransactions() {
-//        let transactionsViewController = TransactionsViewController()
-//        viewController.navigationController?.pushViewController(transactionsViewController, animated: true)
+        let transactionsViewController: TransactionsViewController = .fromNib()
+        viewController.navigationController?.pushViewController(transactionsViewController, animated: true)
     }
 }

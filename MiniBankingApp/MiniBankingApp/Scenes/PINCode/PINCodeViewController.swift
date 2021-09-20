@@ -85,7 +85,7 @@ extension PINCodeViewController: PINCodeViewControllerInput {
     }
 
     func pinCodePresenterDidReqestRoutingToTransactions(_ pinCodePresenter: PINCodePresenter) {
-        // TODO
+        router.routeToTransactions()
     }
 
     func pinCodePresenter(_ pinCodePresenter: PINCodePresenter, didThrowErrorMessage message: String) {
