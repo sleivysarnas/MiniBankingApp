@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TransactionsInteractorInput {
-    func transactionsViewControllerDidRequestData(_ transactionsViewController: TransactionsViewController)
+    func transactionsViewControllerDidRequestTransactions(_ transactionsViewController: TransactionsViewController)
 }
 
 final class TransactionsInteractor {
@@ -19,19 +19,15 @@ final class TransactionsInteractor {
 
 extension TransactionsInteractor: TransactionsInteractorInput {
 
-    func transactionsViewControllerDidRequestData(_ transactionsViewController: TransactionsViewController) {
+    func transactionsViewControllerDidRequestTransactions(_ transactionsViewController: TransactionsViewController) {
         TransactionsDownloadWorker.downloadTransactions { [weak self] transactions in
-            guard
-                let self = self,
-                let transactions = transactions
-            else {
-                return
-            }
-            let transactionsSum = transactions.reduce(0) { $0 + (Float($1.amount) ?? 0) }
+            guard let self = self else { return }
+
+            let transactionsSum = transactions?.reduce(0) { $0 + (Float($1.amount) ?? 0) } ?? 0
 
             self.presenter.transactionsInteractor(
                 self,
-                didDownloadTransactions: transactions,
+                didDownloadTransactions: transactions ?? [],
                 balance: "\(transactionsSum)"
             )
         }

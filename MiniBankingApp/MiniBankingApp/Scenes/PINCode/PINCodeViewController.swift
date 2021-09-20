@@ -89,8 +89,17 @@ extension PINCodeViewController: PINCodeViewControllerInput {
     }
 
     func pinCodePresenter(_ pinCodePresenter: PINCodePresenter, didThrowErrorMessage message: String) {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        let alert = UIAlertController(
+            title: Localisation.error,
+            message: message,
+            preferredStyle: .alert
+        )
+        let alertAction = UIAlertAction(
+            title: Localisation.ok,
+            style: .default,
+            handler: nil
+        )
+        alert.addAction(alertAction)
         present(alert, animated: true, completion: nil)
         interactor.pinCodeViewControllerDidShowPINCodeErrorAlert(self)
     }
@@ -178,9 +187,9 @@ private extension PINCodeViewController {
 
     func clearPINCodeSymbols() {
         UIView.animate(withDuration: 0.3) {
-            for cell in self.pinCodeCollectionView.visibleCells {
-                if let symbolCell = cell as? PINCodeSymbolCell {
-                    symbolCell.toggleCell()
+            self.pinCodeCollectionView.visibleCells.forEach {
+                if let cell = $0 as? PINCodeSymbolCell {
+                    cell.toggleCell()
                 }
             }
         }

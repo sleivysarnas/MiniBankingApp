@@ -37,6 +37,7 @@
 		32966D0D26F8C6CA002FEAF4 /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32966D0C26F8C6CA002FEAF4 /* TransactionsPresenter.swift */; };
 		32966D0F26F8CA3E002FEAF4 /* UITableView+Nibbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32966D0E26F8CA3E002FEAF4 /* UITableView+Nibbed.swift */; };
 		32966D1326F8CF81002FEAF4 /* UITableView+EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32966D1226F8CF81002FEAF4 /* UITableView+EmptyView.swift */; };
+		32966D1626F8D208002FEAF4 /* Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32966D1526F8D208002FEAF4 /* Localisation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		32966D0C26F8C6CA002FEAF4 /* TransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter.swift; sourceTree = "<group>"; };
 		32966D0E26F8CA3E002FEAF4 /* UITableView+Nibbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Nibbed.swift"; sourceTree = "<group>"; };
 		32966D1226F8CF81002FEAF4 /* UITableView+EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyView.swift"; sourceTree = "<group>"; };
+		32966D1526F8D208002FEAF4 /* Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localisation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		323544EF26F1229A0089E171 /* MiniBankingApp */ = {
 			isa = PBXGroup;
 			children = (
+				32966D1426F8D1FC002FEAF4 /* Resources */,
 				32966D0726F8C1FD002FEAF4 /* Models */,
 				325F142C26F131BF0018B0B4 /* Extensions */,
 				325F141926F12BF50018B0B4 /* Scenes */,
@@ -262,6 +265,14 @@
 				32966D0826F8C207002FEAF4 /* Transaction.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		32966D1426F8D1FC002FEAF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32966D1526F8D208002FEAF4 /* Localisation.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +427,7 @@
 				32966CFB26F89B67002FEAF4 /* TransactionsViewController.swift in Sources */,
 				320C02E626F74F790003D119 /* PINCodeInteractor.swift in Sources */,
 				32966D0626F8C1D2002FEAF4 /* TransactionsDownloadWorker.swift in Sources */,
+				32966D1626F8D208002FEAF4 /* Localisation.swift in Sources */,
 				3239FBC426F7AA2100343AAF /* PINCodeRouter.swift in Sources */,
 				323544F326F1229A0089E171 /* SceneDelegate.swift in Sources */,
 				32966D0B26F8C6BE002FEAF4 /* TransactionsInteractor.swift in Sources */,

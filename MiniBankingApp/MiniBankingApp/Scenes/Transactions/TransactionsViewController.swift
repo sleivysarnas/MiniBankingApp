@@ -17,8 +17,6 @@ protocol TransactionsViewControllerInput: AnyObject {
 
 final class TransactionsViewController: UIViewController {
 
-    private let LoadingTableViewMessage = "Loading, please wait..."
-
     @IBOutlet private weak var balanceLabel: UILabel!
     @IBOutlet private weak var transactionsTableView: UITableView!
 
@@ -31,6 +29,8 @@ final class TransactionsViewController: UIViewController {
         setupTableView()
     }
 
+    // MARK: Configuration & setup
+
     private func configure() {
         let interactor = TransactionsInteractor()
         let presenter = TransactionsPresenter()
@@ -42,9 +42,9 @@ final class TransactionsViewController: UIViewController {
 
     private func setupTableView() {
         transactionsTableView.registerCell(type: TransactionCell.self)
-        transactionsTableView.setEmptyMessage(LoadingTableViewMessage)
+        transactionsTableView.setEmptyMessage(Localisation.loadingTransactions)
         transactionsTableView.tableFooterView = UIView()
-        interactor.transactionsViewControllerDidRequestData(self)
+        interactor.transactionsViewControllerDidRequestTransactions(self)
     }
 }
 
@@ -59,8 +59,13 @@ extension TransactionsViewController: TransactionsViewControllerInput {
     ) {
         self.transactions = transactions
         transactionsTableView.removeEmptyMessage()
-        transactionsTableView.reloadData()
         balanceLabel.text = balance
+
+        if !transactions.isEmpty {
+            transactionsTableView.reloadData()
+        } else {
+            transactionsTableView.setEmptyMessage(Localisation.noTransactions)
+        }
     }
 }
 
@@ -82,10 +87,4 @@ extension TransactionsViewController: UITableViewDataSource {
         cell.configure(transaction: transactions[indexPath.row])
         return cell
     }
-}
-
-// MARK: - UITableViewDelegate methods
-
-extension TransactionsViewController: UITableViewDelegate {
-
 }
