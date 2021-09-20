@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="keyboardCollectionView" destination="KCB-TS-OSo" id="PVA-7m-z0X"/>
                 <outlet property="pinCodeCollectionView" destination="5dF-Ic-4Oo" id="dla-7h-4Kl"/>
+                <outlet property="pinCodeInfoLabel" destination="gMT-E6-Ora" id="8hZ-0M-M9Z"/>
                 <outlet property="view" destination="iN0-l3-epB" id="w9Y-uj-CyH"/>
             </connections>
         </placeholder>
@@ -34,7 +35,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-TS-OSo">
-                    <rect key="frame" x="20" y="344" width="374" height="498"/>
+                    <rect key="frame" x="20" y="348.5" width="374" height="493.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="iDG-G2-xOp">
                         <size key="itemSize" width="128" height="128"/>
@@ -43,13 +44,22 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please repeat your PIN code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMT-E6-Ora">
+                    <rect key="frame" x="20" y="254" width="374" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="KCB-TS-OSo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="1KM-X0-ThZ"/>
-                <constraint firstItem="KCB-TS-OSo" firstAttribute="top" secondItem="5dF-Ic-4Oo" secondAttribute="bottom" constant="100" id="1RR-Uv-i5e"/>
+                <constraint firstItem="KCB-TS-OSo" firstAttribute="top" secondItem="gMT-E6-Ora" secondAttribute="bottom" constant="80" id="1RR-Uv-i5e"/>
                 <constraint firstItem="5dF-Ic-4Oo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="150" id="BzX-nd-bCf"/>
+                <constraint firstItem="gMT-E6-Ora" firstAttribute="top" secondItem="5dF-Ic-4Oo" secondAttribute="bottom" constant="10" id="Cwa-b9-Zq0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gMT-E6-Ora" secondAttribute="trailing" constant="20" id="SSM-V8-9Mi"/>
+                <constraint firstItem="gMT-E6-Ora" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bGG-2D-Lda"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5dF-Ic-4Oo" secondAttribute="trailing" constant="20" id="gW7-0z-JfF"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KCB-TS-OSo" secondAttribute="trailing" constant="20" id="inw-eG-a0W"/>
                 <constraint firstItem="5dF-Ic-4Oo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xlc-rA-tum"/>

@@ -8,7 +8,11 @@
 import UIKit
 
 protocol PINCodeViewControllerInput: AnyObject {
-    func togglePINCodeCell(indexPath: IndexPath)
+    func pinCodePresenter(_ pinCodePresenter: PINCodePresenter, didTogglePINCodeCellAtIndexPath indexPath: IndexPath)
+    func pinCodePresenterDidHandleFirstPINCodeSaving(_ pinCodePresenter: PINCodePresenter)
+    func pinCodePresenterDidReqestRoutingToTransactions(_ pinCodePresenter: PINCodePresenter)
+    func pinCodePresenter(_ pinCodePresenter: PINCodePresenter, didThrowErrorMessage message: String)
+    func pinCodePresenterDidHandleErrorAlert(_ pinCodePresenter: PINCodePresenter)
 }
 
 final class PINCodeViewController: UIViewController {
@@ -19,6 +23,7 @@ final class PINCodeViewController: UIViewController {
 
     @IBOutlet private weak var pinCodeCollectionView: UICollectionView!
     @IBOutlet private weak var keyboardCollectionView: UICollectionView!
+    @IBOutlet private weak var pinCodeInfoLabel: UILabel!
 
     lazy var pinCodeSymbolCellSize: CGSize = {
         let height = pinCodeCollectionView.bounds.height / 2
@@ -31,10 +36,12 @@ final class PINCodeViewController: UIViewController {
     }()
 
     private var interactor: PINCodeInteractorInput!
+    private var router: PINCodeRouterInput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
+        configure()
         setupCollectionViews()
     }
 
@@ -43,10 +50,13 @@ final class PINCodeViewController: UIViewController {
     private func configure() {
         let interactor = PINCodeInteractor()
         let presenter = PINCodePresenter()
+        let router = PINCodeRouter()
 
         self.interactor = interactor
+        self.router = router
         interactor.presenter = presenter
         presenter.viewController = self
+        router.viewController = self
     }
 
     private func setupCollectionViews() {
@@ -64,9 +74,30 @@ final class PINCodeViewController: UIViewController {
 
 extension PINCodeViewController: PINCodeViewControllerInput {
 
-    func togglePINCodeCell(indexPath: IndexPath) {
+    func pinCodePresenter(_ pinCodePresenter: PINCodePresenter, didTogglePINCodeCellAtIndexPath indexPath: IndexPath) {
         guard let cell = pinCodeCollectionView.cellForItem(at: indexPath) as? PINCodeSymbolCell else { return }
         cell.toggleCell()
+    }
+
+    func pinCodePresenterDidHandleFirstPINCodeSaving(_ pinCodePresenter: PINCodePresenter) {
+        clearPINCodeSymbols()
+        pinCodeInfoLabel.isHidden = false
+    }
+
+    func pinCodePresenterDidReqestRoutingToTransactions(_ pinCodePresenter: PINCodePresenter) {
+        // TODO
+    }
+
+    func pinCodePresenter(_ pinCodePresenter: PINCodePresenter, didThrowErrorMessage message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+        interactor.pinCodeViewControllerDidShowPINCodeErrorAlert(self)
+    }
+
+    func pinCodePresenterDidHandleErrorAlert(_ pinCodePresenter: PINCodePresenter) {
+        clearPINCodeSymbols()
+        pinCodeInfoLabel.isHidden = true
     }
 }
 
@@ -116,6 +147,18 @@ extension PINCodeViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - UICollectionViewDelegate methods
+
+extension PINCodeViewController: UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard collectionView === keyboardCollectionView else {
+            return
+        }
+        interactor.pinCodeViewController(self, didPressKeyboardCellAtIndexPath: indexPath)
+    }
+}
+
 // MARK: - Helpers
 
 private extension PINCodeViewController {
@@ -131,5 +174,15 @@ private extension PINCodeViewController {
 
         keyboardCell.setupCell(index: indexPath.item)
         return keyboardCell
+    }
+
+    func clearPINCodeSymbols() {
+        UIView.animate(withDuration: 0.3) {
+            for cell in self.pinCodeCollectionView.visibleCells {
+                if let symbolCell = cell as? PINCodeSymbolCell {
+                    symbolCell.toggleCell()
+                }
+            }
+        }
     }
 }
