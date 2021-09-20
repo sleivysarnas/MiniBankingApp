@@ -9,7 +9,6 @@ import Foundation
 import KeychainSwift
 
 protocol PINCodeInteractorInput {
-
     func pinCodeViewController(
         _ pinCodeViewController: PINCodeViewController,
         didPressKeyboardCellAtIndexPath indexPath: IndexPath
@@ -20,10 +19,10 @@ protocol PINCodeInteractorInput {
 final class PINCodeInteractor {
 
     private let PINCodeLength = 4
-    private let PINCodeMismatchErrorMessage = "PIN code mismatch! Please try again"
 
     private var currentPINCode = ""
     private var temporarySavedPINCode = ""
+    
     private var savedPINCode: String? {
         get {
             KeychainSwift().get("PINCode")
@@ -36,7 +35,7 @@ final class PINCodeInteractor {
     var presenter: PINCodePresenterInput!
 }
 
-// MARK: PINCodeInteractorInput methods
+// MARK: - PINCodeInteractorInput methods
 
 extension PINCodeInteractor: PINCodeInteractorInput {
 
@@ -66,11 +65,7 @@ extension PINCodeInteractor: PINCodeInteractorInput {
 private extension PINCodeInteractor {
 
     func submitPINCode() {
-        if let _ = savedPINCode {
-            login()
-        } else {
-            register()
-        }
+        savedPINCode == nil ? register() : login()
     }
 
     func register() {
@@ -82,13 +77,13 @@ private extension PINCodeInteractor {
             savedPINCode = currentPINCode
             login()
         } else {
-            presenter.pinCodeInteractor(self, didThrowErrorMessage: PINCodeMismatchErrorMessage)
+            presenter.pinCodeInteractor(self, didThrowErrorMessage: Localisation.pinCodeMismatch)
         }
     }
 
     func login() {
         guard savedPINCode == currentPINCode else {
-            presenter.pinCodeInteractor(self, didThrowErrorMessage: PINCodeMismatchErrorMessage)
+            presenter.pinCodeInteractor(self, didThrowErrorMessage: Localisation.pinCodeMismatch)
             return
         }
         presenter.pinCodeInteractorDidSubmitPINCode(self)

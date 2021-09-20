@@ -19,8 +19,10 @@ final class PINCodePresenter {
     weak var viewController: PINCodeViewControllerInput!
 }
 
-extension PINCodePresenter: PINCodePresenterInput {
+// MARK: - PINCodePresenterInput methods
 
+extension PINCodePresenter: PINCodePresenterInput {
+    
     func pinCodeInteractor(_ pinCodeInteractor: PINCodeInteractor, didUpdatePINCodeAtIndexPath indexPath: IndexPath) {
         viewController.pinCodePresenter(self, didTogglePINCodeCellAtIndexPath: indexPath)
     }
